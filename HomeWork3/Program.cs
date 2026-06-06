@@ -6,79 +6,78 @@
         {
             //davaleba1
 
-            //Console.WriteLine("input username:");
-            //string UserName = Console.ReadLine();
-
-            //Console.WriteLine("input paswword");
-            //string Password = Console.ReadLine();
-
-            //if(UserName =="admin" && Password== "1234")
+            //Console.WriteLine("sheiyvanet cifri");
+            //bool isValid = int.TryParse(Console.ReadLine(), out int num);
+            //if (isValid)
             //{
-            //    Console.WriteLine("welcome admin");
+            //	for (int i = 0; i <= 10; i++)
+            //	{
+            //		Console.WriteLine(num*i);
+            //	}
             //}
-            //else
-            //{
-            //    Console.WriteLine("access denied");
-            //}
-
 
 
             //davaleba2
 
-            // Console.WriteLine("shemoiyvanet cifri");
-            //int.TryParse(Console.ReadLine(),out int num1 );
+            //Console.WriteLine("sheiyvanet cifri");
+            //bool isValid = int.TryParse(Console.ReadLine(), out int num);
+            //if (isValid)
+            //{
+            //    for (int i = 1; i <= num; i++)
+            //    {
+            //        for (int j = 1; j <= num - i; j++)
 
-            // Console.WriteLine("shemoiyvanet operatori");
-            // string opetator = Console.ReadLine();
+            //            Console.Write(" ");
+            //        for (int k = 1; k <= i; k++)
 
-            // Console.WriteLine("shemoiyvanet cifri");
-            // int.TryParse(Console.ReadLine(),out int num2);
+            //            Console.Write("* ");
+            //        Console.WriteLine();
+
+            //    }
 
 
-            // int result = 0;
-
-            // switch (opetator)
-            // {
-            //     case "+":
-            //         result = num1 + num2;
-            //         break;
-
-            //     case "-":
-            //         result = num1 - num2;
-            //         break;
-
-            //     case "*":
-            //         result = num1 * num2;
-            //         break;
-
-            //     case "/":
-            //         result = num1 / num2;
-            //         break;
-            //     default:
-            //          Console.WriteLine("araswori operatori");
-            //         break;
-            // }
-            //Console.WriteLine("shedegi " + result);
-
+            //}
+            //else
+            //{
+            //    Console.WriteLine("invalid input");
+            //}
 
             //davaleba3 
 
-            Console.WriteLine("sheiyvanet asaki");
-            int.TryParse(Console.ReadLine(), out int age);
+            //Console.WriteLine("enter number");
 
-            if (age >= 0 && age <= 12)
+            //bool isValid = int.TryParse(Console.ReadLine(), out int num1);
+            //int numbers = 0;
+            //if (isValid)
+            //{
+            //    for (int j = 2; j < num1; j += 2)
+            //    {
+            //        numbers += j;
+            //    }
+            //}
+
+
+            //Console.WriteLine(numbers);
+
+
+
+            //davaleab4
+
+            Random random = new Random();
+           
+
+            int rand = random.Next(0, 100); 
+
+            Console.WriteLine("Enter number");
+            bool isvalid = int.TryParse(Console.ReadLine(), out int userNum);
+
+
+            while (rand != userNum || !isvalid)
             {
-                Console.WriteLine("kid");
+                
+                Console.WriteLine("tavidan cadet");
+                isvalid = int.TryParse(Console.ReadLine(), out userNum);
             }
-            else if (age >= 13 && age <= 19)
-            {
-                Console.WriteLine("tineijeri");
-            }
-            else if (age >= 20 && age <= 64)
-            {
-                Console.WriteLine("zrdasruli");
-            }
-            else { Console.WriteLine("tineijeri"); }
         }
     }
 }
