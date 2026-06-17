@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            //davaleba1
+            //დავალება 1
 
             //Console.WriteLine(power(2, 3));
 
