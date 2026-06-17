@@ -6,78 +6,63 @@
         {
             //davaleba1
 
-            //Console.WriteLine("sheiyvanet cifri");
-            //bool isValid = int.TryParse(Console.ReadLine(), out int num);
-            //if (isValid)
+            //int[] arr1 = { 1, 2, 3 };
+            //int[] arr2 = { 4, 5, 6 };
+
+            //int[] resultArr = new int[arr1.Length + arr2.Length];
+
+
+            //for (int i = 0; i < arr1.Length; i++)
             //{
-            //	for (int i = 0; i <= 10; i++)
-            //	{
-            //		Console.WriteLine(num*i);
-            //	}
+            //    resultArr[i] = arr1[i];
             //}
+
+
+            //for (int i = 0; i < arr2.Length; i++)
+            //{
+            //    resultArr[arr1.Length + i] = arr2[i];
+            //}
+
+
+            //Console.Write("result arr [ ");
+            //for (int i = 0; i < resultArr.Length; i++)
+            //{
+            //    Console.Write(resultArr[i]);
+
+
+            //    if (i < resultArr.Length - 1)
+            //    {
+            //        Console.Write(", ");
+            //    }
+            //}
+
+            //Console.WriteLine(" ]");
+
 
 
             //davaleba2
+            int[] arr1 = [3, 5, -4, 8, 11, 1, -1, 6];
+            Console.Write("შეიყვანეთ სამიზნე ჯამი: ");
 
-            //Console.WriteLine("sheiyvanet cifri");
             //bool isValid = int.TryParse(Console.ReadLine(), out int num);
-            //if (isValid)
-            //{
-            //    for (int i = 1; i <= num; i++)
-            //    {
-            //        for (int j = 1; j <= num - i; j++)
+            int targetSum = 7;
 
-            //            Console.Write(" ");
-            //        for (int k = 1; k <= i; k++)
-
-            //            Console.Write("* ");
-            //        Console.WriteLine();
-
-            //    }
-
-
-            //}
-            //else
-            //{
-            //    Console.WriteLine("invalid input");
-            //}
-
-            //davaleba3 
-
-            //Console.WriteLine("enter number");
-
-            //bool isValid = int.TryParse(Console.ReadLine(), out int num1);
-            //int numbers = 0;
-            //if (isValid)
-            //{
-            //    for (int j = 2; j < num1; j += 2)
-            //    {
-            //        numbers += j;
-            //    }
-            //}
-
-
-            //Console.WriteLine(numbers);
+            for (int i = 0; i < arr1.Length; i++) { 
+            for(int j = 1+i; j< arr1.Length; j++)
+                {
+                    if (arr1[i]+ arr1[j]== targetSum)
+                    {
+                        Console.WriteLine("[" + arr1[i] + ", " + arr1[j] + "]");
+                    }
+                }
+                 }
+        
 
 
 
-            //davaleab4
-
-            Random random = new Random();
-           
-
-            int rand = random.Next(0, 100); 
-
-            Console.WriteLine("Enter number");
-            bool isvalid = int.TryParse(Console.ReadLine(), out int userNum);
 
 
-            while (rand != userNum || !isvalid)
-            {
-                
-                Console.WriteLine("tavidan cadet");
-                isvalid = int.TryParse(Console.ReadLine(), out userNum);
-            }
-        }
+
+    }
     }
 }
