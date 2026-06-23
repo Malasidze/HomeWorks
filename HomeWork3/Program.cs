@@ -5,80 +5,108 @@
         static void Main(string[] args)
         {
             //დავალება 1
+            //int[][] students = [
+            //    [10,8,9],
+            //    [9,6,5],
+            //    [7,7,10]
+            //    ];
 
+            //int sum = 0;
+            //for (int i = 0; i < students.Length; i++)
+            //{   
 
-            //Console.WriteLine(power(2, 3));
-
-
-
-            //int power(int num1, int num2)
-            //{
-            //    int result = num1;
-            //    for (int i = 1; i < num2; i++)
+            //    for (int j = 0; j < students[i].Length; j++)
             //    {
-            //        result *= num1; 
+            //        sum += students[i][j];
+
             //    }
-
-            //    return result;
-            //}
-
+            //    Console.WriteLine(sum / students[i].Length);
 
 
 
             //davaleba2
 
-            //bool IsPrime(int num)
+            //Random rand = new();
+
+
+            //int[] passcodes = new int[10];
+
+            //for (int i = 0; i < passcodes.Length; i++)
             //{
-
-            //    for (int i = 2; i < num; i++)
-            //    {
-            //        if (num % i == 0)
-            //        {
-            //            return false;
-            //        }
-            //    }
-
-            //    return true;
-
+            //    passcodes[i] = rand.Next(1000, 10000);
             //}
 
+            //Console.WriteLine("shemoiyvan epaskodi");
+            //bool isValid = int.TryParse(Console.ReadLine(), out int userInput);
 
-            //Console.WriteLine("Ennter numebe");
-            //bool isValid = int.TryParse(Console.ReadLine(), out int userNum);
+            //bool isMatch = false;
 
-            //Console.WriteLine(IsPrime(userNum) ? "primitive" : "conpose");
+            //if (isValid)
+            //{
+            //    for (int i = 0; i < passcodes.Length; i++)
+            //    {
+            //        if (userInput == passcodes[i])
+            //        {
+
+            //            isMatch = true;
+            //            break;
+            //        }
+
+            //    }
+            //}
+            //Console.WriteLine(isMatch ? "correct" : "inccorect");
+
 
 
             //davaleba3
+            //int[] numbers = [2, 3, 4, -4, 11, 12];
+            //int min = numbers[0]; 
+            //int max = numbers[0]; 
 
-            //bool IsPailndrome(string pal )
+            //foreach (var item in numbers)
             //{
-            //	if(pal.Length < 2)
-            //	{
-            //		return true;
-            //	}
+            //    if (item < min)
+            //    {
+            //        min = item;
+            //    }
 
-            //	if (pal[0] != pal[pal.Length - 1])
-            //	{
-            //		return false;
-            //	}
-
-            //	string middle = pal.Substring(1, pal.Length-2);
-
-            //	return  IsPailndrome(middle);
+            //    if (item > max)
+            //    {
+            //        max = item;
+            //    }
             //}
 
 
+            //davaleba 4
+
+            string[] words = ["dachi", "gocha", "ado"];
+
+
+            foreach (var item in words)
+            {
+            	foreach (var symbol in item)
+            	{
+            		Console.WriteLine(symbol);
+            	}
+           }
             //davaleba 5
-            //int Pow(int num, int powerer)
-            //{
-            //	if(powerer == 1)
-            //	{
-            //		return num;
-            //	}
 
-            //	return num * Pow(num, powerer - 1);
-            //}
+
+
+            string[] emails = ["gftyyiif@gg", "adomalo@iii"];
+
+            bool validEmail = false;
+            foreach (var email in emails)
+            {
+                foreach (var symbol in email)
+                {
+                    if (symbol == '@')
+                    {
+                        validEmail = true;
+                    }
+                    Console.WriteLine(validEmail ? "valid" : "not valid");
+                }
+            }
 
 
         }
